@@ -23,8 +23,14 @@ img {
     max-width: 100%;
 }
 
+// подумати як бути
 .list {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--m-col);
 }

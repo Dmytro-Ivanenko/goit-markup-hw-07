@@ -65,6 +65,11 @@ img {
   margin: 0;
 }
 
+.link {
+  text-decoration: none;
+  color: var(--m-col);
+}
+
 .visually-hiden {
   position: absolute;
   width: 1px;
@@ -103,7 +108,6 @@ img {
   padding-bottom: 25px;
   border-bottom: 1px solid var(--header-border-col);
 }
-
 .header .container,
 .header .list {
   display: flex;
@@ -111,16 +115,17 @@ img {
   align-items: center;
 }
 
-.link.head-contacts {
+.contacts .contacts__mail,
+.contacts .contacts__tel {
   display: flex;
   align-items: center;
   color: var(--alt-col);
   fill: var(--alt-col);
 }
 
-.link {
-  text-decoration: none;
-  color: var(--m-col);
+.link:hover .contacts__icon,
+.link:focus .contacts__icon {
+  fill: var(--acc-col);
 }
 
 .link:hover,
@@ -130,12 +135,11 @@ img {
   color: var(--acc-col);
 }
 
-.active-page {
+.link_active-page {
   color: var(--acc-col);
   position: relative;
 }
-
-.active-page::after {
+.link_active-page::after {
   display: block;
   position: absolute;
   bottom: -32px;
@@ -146,29 +150,24 @@ img {
   content: "";
 }
 
-.nav {
+.header__nav {
   display: flex;
 }
 
-.header .list > :not(:last-child) {
+.contacts > :not(:last-child), .navigation > :not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-item .link,
-.cont-item .link {
+.navigation__item .link,
+.contacts__item .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.header-icon {
+.contacts__icon {
   margin-right: 10px;
-}
-
-.link.head-contacts:hover,
-.link.head-contacts:focus {
-  fill: var(--acc-col);
 }
 
 .logo {
@@ -180,10 +179,13 @@ img {
   line-height: 1.17;
   text-decoration: none;
   align-items: center;
+}
+
+.header__logo {
   color: var(--logo-h-col);
 }
 
-.logo-acc {
+.logo__acc {
   color: var(--acc-col);
 }
 

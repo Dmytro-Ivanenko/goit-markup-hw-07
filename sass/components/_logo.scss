@@ -9,10 +9,13 @@
     line-height: 1.17;
     text-decoration: none;
     align-items: center;
+   }
+
+.header__logo{
     color: var(--logo-h-col);
 }
 
-.logo-acc {
+.logo__acc{
     color: var(--acc-col);
 }
 
