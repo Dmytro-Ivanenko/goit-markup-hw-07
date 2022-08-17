@@ -1,0 +1,53 @@
+.join-us-box {
+    width: 570px;
+
+    padding-top: 15px;
+    margin-left: 93px;
+}
+
+.join-us-label {
+    display: block;
+    color: var(--logo-f-col);
+}
+
+.join-us-input {
+    padding: 15px 16px;
+    width: 358px;
+    height: 50px;
+
+    background-color: transparent;
+    border: 1px solid var(--join-us-bcg-col);
+    border-radius: 4px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: #fff;
+}
+
+.join-us-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: var(--foot-alph-col);
+}
+
+.join-us-internal-box {
+    display: flex;
+    gap: 12px;
+}
+
+.join-us-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 200px;
+    height: 50px;
+}
+
+.send-icon {
+    margin-left: 10px;
+}

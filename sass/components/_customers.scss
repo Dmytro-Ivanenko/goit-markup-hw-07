@@ -1,0 +1,29 @@
+.company-items {
+    display: flex;
+
+    gap: 30px;
+}
+
+.company-item {
+    width: 170px;
+    height: 92px;
+}
+
+.company-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    fill: var(--icon-fill);
+    border: 1px solid var(--icon-fill);
+    border-radius: 5px;
+}
+
+.company-link:hover,
+.company-link:focus {
+    fill: var(--acc-col);
+    border: 1px solid var(--acc-col);
+}

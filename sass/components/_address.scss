@@ -1,0 +1,22 @@
+.address-foot-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.list.adress {
+    font-style: normal;
+}
+
+.link.foot-item,
+.logo.foot-item {
+    color: var(--logo-f-col);
+}
+
+.list.adress {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.foot-item-cont {
+    color: var(--foot-alph-col);
+}
