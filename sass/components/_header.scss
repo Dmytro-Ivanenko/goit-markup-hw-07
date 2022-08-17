@@ -1,0 +1,75 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--header-border-col);
+}
+
+.header .container,
+.header .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link.head-contacts {
+    display: flex;
+    align-items: center;
+
+    color: var(--alt-col);
+    fill: var(--alt-col);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--m-col);
+}
+
+.link:hover,
+.link:focus,
+.link.foot-item:hover,
+.link.foot-item:focus {
+    color: var(--acc-col);
+}
+
+.active-page {
+    color: var(--acc-col);
+    position: relative;
+}
+
+.active-page::after {
+    display: block;
+    position: absolute;
+    bottom: -32px;
+
+    width: 100%;
+    height: 4px;
+
+    background-color: var(--acc-col);
+    border-radius: 2px;
+    content: "";
+}
+
+.nav {
+    display: flex;
+}
+
+.header .list> :not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-item .link,
+.cont-item .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header-icon {
+    margin-right: 10px;
+}
+
+.link.head-contacts:hover,
+.link.head-contacts:focus {
+    fill: var(--acc-col);
+}
