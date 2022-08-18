@@ -1,9 +1,8 @@
 .link,
-.hero-btn,
+.btn,
 .filter-item,
-.example-item,
-.modal-submit,
-.join-us-button {
+.example-item
+ {
     transition-property: color, background-color, box-shadow, fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

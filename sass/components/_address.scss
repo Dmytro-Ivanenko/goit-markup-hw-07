@@ -1,22 +1,21 @@
-.address-foot-item:not(:last-child) {
+.address-info__item {
+  &:not(:last-child) {
     margin-bottom: 9px;
+  }
 }
 
-.list.adress {
-    font-style: normal;
+.footer__logo,
+.address-info__data {
+  color: var(--logo-f-col);
 }
 
-.link.foot-item,
-.logo.foot-item {
-    color: var(--logo-f-col);
+.address-info__list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
-.list.adress {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-}
-
-.foot-item-cont {
-    color: var(--foot-alph-col);
+.address-info__data_contact {
+  color: var(--foot-alph-col);
 }

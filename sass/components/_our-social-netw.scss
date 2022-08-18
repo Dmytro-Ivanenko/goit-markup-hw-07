@@ -1,25 +1,29 @@
-.social-area {
-    padding-top: 15px;
-    margin-left: 70px;
-    color: var(--logo-f-col);
+.social-netw {
+  padding-top: 15px;
+  margin-left: 70px;
+  color: var(--logo-f-col);
 }
 
-
-// join - це в address
-.join,
-.join-us-label {
-    margin-bottom: 20px;
-
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 1.14;
-    font-weight: 700;
+.social-netw__list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-.social-media {
-    background-color: rgba(255, 255, 255, 0.1);
+.social-netw__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.social-area .social-media {
-    fill: var(--logo-f-col);
+.social-netw__link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-netw__icon {
+  fill: var(--logo-f-col);
+}
+
+.social-netw__link {
+  @extend .staff__social-media-link;
 }
